@@ -1,18 +1,8 @@
-def product(a, b):
-    p = a * b
-    print(p)
+statues = [1,2,3,1,2,1]
 
-
-# Second product method
-# Takes three argument and print their 
-# product 
-def product(a, b, c):
-    p = a * b * c
-    print(p)
-
-
-# Uncommenting the below line shows an error
-# product(4, 5) 
-
-# This line will call the second product method 
-product(4, 5, 5) 
+mum = zip(statues[:-1], statues[1:])
+diff_statues = [y-x for x, y in zip(statues[:-1], statues[1:])]
+    print(x,y)
+print(statues[:-1])
+print(statues[1:])
+print(list(mum))
